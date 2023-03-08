@@ -1,4 +1,5 @@
 const { VueLoaderPlugin } = require("vue-loader");
+const VuetifyLoaderPlugin = require("vuetify-loader/lib/plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 
@@ -50,6 +51,7 @@ module.exports = {
   },
   plugins: [
     new VueLoaderPlugin(),
+    new VuetifyLoaderPlugin(),
     new HtmlWebpackPlugin({
       title: "CKeditor",
       template: "./src/index.html",
